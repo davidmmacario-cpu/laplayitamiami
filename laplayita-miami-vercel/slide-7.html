@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Playita Miami - Slide 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a1628;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-bar {
+            background: rgba(26, 42, 74, 0.95);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #d4af37;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #d4af37;
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid #d4af37;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-btn:hover {
+            background: #d4af37;
+            color: #0a1628;
+            transform: scale(1.05);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .slide-counter {
+            color: #a0b4d0;
+            font-size: 0.95rem;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .slide-content {
+            flex: 1;
+            width: 100%;
+            height: calc(100vh - 60px);
+            overflow: auto;
+        }
+
+        .keyboard-hint {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(26, 42, 74, 0.9);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #a0b4d0;
+            border: 1px solid #d4af37;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar {
+                padding: 10px 15px;
+            }
+
+            .nav-title {
+                font-size: 1rem;
+            }
+
+            .keyboard-hint {
+                display: none;
+            }
+
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <nav class="nav-bar">
+            <div class="nav-title">La Playita Miami - Investment Opportunity</div>
+            <div class="nav-controls">
+                <a href="index.html" class="nav-btn">🏠 Menu</a>
+                <span class="slide-counter">Slide 7 / 9</span>
+                <a href="slide-6.html" class="nav-btn" >← Anterior</a>
+                <a href="slide-8.html" class="nav-btn" >Próximo →</a>
+            </div>
+        </nav>
+
+        <div class="slide-content">
+            <!-- SLIDE CONTENT GOES HERE -->
+            
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; padding: 40px; text-align: center; background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 100%);">
+        <div style="max-width: 800px; background: rgba(255, 255, 255, 0.05); padding: 60px; border-radius: 20px; border: 2px solid #d4af37;">
+            <div style="font-size: 4rem; margin-bottom: 20px;">📊</div>
+            <h1 style="font-size: 2.5rem; color: #d4af37; margin-bottom: 20px;">Showcase da Propriedade</h1>
+            <p style="font-size: 1.2rem; color: #a0b4d0; line-height: 1.8; margin-bottom: 30px;">15 fotos reais das amenidades premium</p>
+
+            <div style="background: rgba(212, 175, 55, 0.1); padding: 30px; border-radius: 15px; border-left: 4px solid #d4af37; text-align: left; margin-top: 30px;">
+                <h3 style="color: #d4af37; margin-bottom: 15px;">⚠️ Instruções para Deploy:</h3>
+                <ol style="color: #a0b4d0; line-height: 1.8; padding-left: 20px;">
+                    <li>Este é um arquivo placeholder - substitua o conteúdo dentro da div <code>&lt;div class="slide-content"&gt;</code></li>
+                    <li>Cole o HTML completo do Slide 7 exportado do sistema de slides</li>
+                    <li>Mantenha a estrutura de navegação (nav-bar) intacta</li>
+                    <li>Todas as imagens devem ser acessíveis via URLs ou base64</li>
+                    <li>Gráficos Chart.js devem ter as bibliotecas incluídas no HTML</li>
+                </ol>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="index.html" style="display: inline-block; background: linear-gradient(135deg, #d4af37 0%, #c4941f 100%); color: #0a1628; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                    ← Voltar ao Menu
+                </a>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+
+        <div class="keyboard-hint">
+            ⌨️ Use ← → para navegar | ESC para menu
+        </div>
+    </div>
+
+    <script>
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' && true) {
+                window.location.href = 'slide-6.html';
+            } else if (e.key === 'ArrowRight' && true) {
+                window.location.href = 'slide-8.html';
+            } else if (e.key === 'Escape') {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
