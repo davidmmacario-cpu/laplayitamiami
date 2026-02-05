@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa - La Playita Miami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0a1628;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .slide-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-content {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 1000;
+            background: rgba(10, 22, 40, 0.95);
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .nav-button {
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid #d4af37;
+            color: #d4af37;
+            padding: 12px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-button:hover {
+            background: #d4af37;
+            color: #0a1628;
+            transform: scale(1.05);
+        }
+
+        .nav-button.home {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .nav-button.home:hover {
+            background: #ffffff;
+            color: #0a1628;
+        }
+
+        .slide-indicator {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid #d4af37;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .navigation {
+                bottom: 15px;
+                padding: 10px 15px;
+                gap: 10px;
+            }
+
+            .nav-button {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+
+            .slide-indicator {
+                top: 15px;
+                right: 15px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-indicator">
+            Slide 1/9
+        </div>
+
+        <div class="slide-content">
+            
+<div style="background: linear-gradient(135deg, #0a1628 0%, #1a2942 100%); padding: 80px 40px; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div style="text-align: center; max-width: 900px;">
+        <div style="font-size: 0.9rem; color: #d4af37; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px;">Miami, FL</div>
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 4.5rem; color: #d4af37; margin-bottom: 20px;">La Playita</h1>
+        <h2 style="font-size: 2.5rem; color: #ffffff; margin-bottom: 30px; font-weight: 300;">Premium Short-Term Rental</h2>
+        <h3 style="font-size: 1.8rem; color: #b8c5d6; margin-bottom: 50px;">Business Opportunity</h3>
+        <p style="font-size: 1.2rem; color: #8899aa; margin-bottom: 40px;">Fully Operational Turnkey Investment</p>
+
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 50px;">
+            <div style="padding: 15px 30px; background: rgba(212, 175, 55, 0.1); border: 2px solid #d4af37; border-radius: 10px;">
+                <div style="font-size: 1.1rem; color: #ffffff;">📍 65 NW 116th St</div>
+            </div>
+            <div style="padding: 15px 30px; background: rgba(212, 175, 55, 0.1); border: 2px solid #d4af37; border-radius: 10px;">
+                <div style="font-size: 1.1rem; color: #ffffff;">🛏️ 4 Bedrooms</div>
+            </div>
+            <div style="padding: 15px 30px; background: rgba(212, 175, 55, 0.1); border: 2px solid #d4af37; border-radius: 10px;">
+                <div style="font-size: 1.1rem; color: #ffffff;">👥 Sleeps 16</div>
+            </div>
+            <div style="padding: 15px 30px; background: rgba(212, 175, 55, 0.1); border: 2px solid #d4af37; border-radius: 10px;">
+                <div style="font-size: 1.1rem; color: #ffffff;">🏊 Heated Pool</div>
+            </div>
+            <div style="padding: 15px 30px; background: rgba(212, 175, 55, 0.1); border: 2px solid #d4af37; border-radius: 10px;">
+                <div style="font-size: 1.1rem; color: #ffffff;">🎮 Resort-Style Entertainment</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-button" id="prevBtn">
+                ← Anterior
+            </a>
+            <a href="index.html" class="nav-button home">
+                🏠 Menu
+            </a>
+            <a href="slide-2.html" class="nav-button" id="nextBtn">
+                Próximo →
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                document.getElementById('prevBtn').click();
+            } else if (e.key === 'ArrowRight') {
+                document.getElementById('nextBtn').click();
+            } else if (e.key === 'Home' || e.key === 'Escape') {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
