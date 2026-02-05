@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Playita Miami - Apresentação STR Investment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2942 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #b8c5d6;
+            margin-bottom: 40px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #d4af37;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #8899aa;
+            margin-top: 5px;
+        }
+
+        .slides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .slide-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .slide-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .slide-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #d4af37;
+            opacity: 0.5;
+            margin-bottom: 15px;
+        }
+
+        .slide-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .slide-desc {
+            font-size: 0.95rem;
+            color: #b8c5d6;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: #8899aa;
+        }
+
+        .airbnb-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #d4af37;
+            color: #0a1628;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .airbnb-link:hover {
+            background: #f0c857;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+
+            .stat-value {
+                font-size: 1.5rem;
+            }
+
+            .slides-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏖️ La Playita Miami</h1>
+            <p class="subtitle">Premium Short-Term Rental Investment Opportunity</p>
+            <p class="subtitle">65 NW 116th St, Miami, FL 33168</p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">$132,830</div>
+                    <div class="stat-label">Projeção 2026</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">58%</div>
+                    <div class="stat-label">Margem NOI</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">4.87★</div>
+                    <div class="stat-label">Superhost 3x</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">16</div>
+                    <div class="stat-label">Capacidade</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="slides-grid">
+
+            <a href="slide-1.html" class="slide-card">
+                <div class="slide-number">01</div>
+                <div class="slide-title">Capa</div>
+                <div class="slide-desc">La Playita Miami Premium STR</div>
+            </a>
+
+            <a href="slide-2.html" class="slide-card">
+                <div class="slide-number">02</div>
+                <div class="slide-title">Overview</div>
+                <div class="slide-desc">Detalhes da Propriedade & Localização</div>
+            </a>
+
+            <a href="slide-3.html" class="slide-card">
+                <div class="slide-number">03</div>
+                <div class="slide-title">Performance Financeira</div>
+                <div class="slide-desc">Crescimento de Receita 2023-2026</div>
+            </a>
+
+            <a href="slide-4.html" class="slide-card">
+                <div class="slide-number">04</div>
+                <div class="slide-title">Análise de Tendências</div>
+                <div class="slide-desc">Receita & Sazonalidade</div>
+            </a>
+
+            <a href="slide-5.html" class="slide-card">
+                <div class="slide-number">05</div>
+                <div class="slide-title">Reservas 2026</div>
+                <div class="slide-desc">Bookings & Impacto Copa do Mundo</div>
+            </a>
+
+            <a href="slide-6.html" class="slide-card">
+                <div class="slide-number">06</div>
+                <div class="slide-title">Despesas Operacionais</div>
+                <div class="slide-desc">Breakdown de Custos 2025</div>
+            </a>
+
+            <a href="slide-7.html" class="slide-card">
+                <div class="slide-number">07</div>
+                <div class="slide-title">Showcase da Propriedade</div>
+                <div class="slide-desc">Amenidades Resort-Style</div>
+            </a>
+
+            <a href="slide-8.html" class="slide-card">
+                <div class="slide-number">08</div>
+                <div class="slide-title">Destaques do Investimento</div>
+                <div class="slide-desc">Valor do Ativo & Vantagens</div>
+            </a>
+
+            <a href="slide-9.html" class="slide-card">
+                <div class="slide-number">09</div>
+                <div class="slide-title">Contato & CTA</div>
+                <div class="slide-desc">Próximos Passos</div>
+            </a>
+
+        </div>
+
+        <footer>
+            <p>© 2026 La Playita Miami - Premium STR Investment</p>
+            <a href="https://airbnb.com/rooms/1330752051728804418" target="_blank" class="airbnb-link">
+                Ver Listagem no Airbnb →
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
